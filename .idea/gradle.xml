@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="1.7" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/MaterialDesign" />
+            <option value="$PROJECT_DIR$/MaterialDesignDemo" />
+            <option value="$PROJECT_DIR$/aidlcilent" />
+            <option value="$PROJECT_DIR$/customermanage" />
+            <option value="$PROJECT_DIR$/library" />
+            <option value="$PROJECT_DIR$/loanapply" />
+            <option value="$PROJECT_DIR$/loanprogresearch" />
+            <option value="$PROJECT_DIR$/loansearch" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical" >
+	<TextView 
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:paddingLeft="20dp"
+       android:textSize="19sp"
+       android:textColor="@color/blue"
+       android:text="请录入共有人信息"
+       android:gravity="center_vertical"
+       />
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共有人姓名" />
+
+        <EditText
+            android:id="@+id/et_FullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/news_text_color"
+            android:ems="10" >
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共有人证件号码" />
+
+        <EditText
+            android:id="@+id/et_CertID"
+            android:textColor="@color/news_text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10" >
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共有人联系电话" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:textColor="@color/news_text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10" >
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <CheckBox
+            android:textColor="@color/news_text_color"
+            android:id="@+id/cb_agreegur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否同意抵押" />
+
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+       
+       <Button
+        android:id="@+id/btn_cancel"
+        style="@style/dialog_blue_button"
+        android:layout_width="0dp"
+        android:layout_height="60dip"
+        android:layout_weight="1"
+        android:background="@drawable/gray_button_background"
+        android:text="取     消"
+        android:textSize="23sp" />
+        <Button
+            android:id="@+id/btn_sure"
+        android:layout_width="0dip"
+        android:layout_height="60dip"
+        android:layout_weight="1"
+        style="@style/dialog_blue_button"
+        android:background="@drawable/blue_button_background"
+        android:text="确    定"
+        android:textSize="23sp" />
+
+   </LinearLayout>
+</LinearLayout>

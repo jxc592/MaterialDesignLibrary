@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@color/bankloud_black"
+        android:id="@+id/cb_guarantyData"
+        android:layout_gravity="left|center_vertical" />
+</FrameLayout>

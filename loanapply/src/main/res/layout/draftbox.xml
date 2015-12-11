@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <com.guoguang.android.library.customwidget.TitleLayout
+        android:id="@+id/tl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.guoguang.android.library.customwidget.TitleLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+
+        <RelativeLayout
+            android:background="@drawable/bg_midspace"
+            android:id="@+id/fb_detail"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="1024dp"
+            android:layout_height="match_parent" >
+			<LinearLayout 
+			    android:orientation="vertical"
+				android:layout_height="match_parent"
+			    android:layout_width="match_parent"
+			    >
+
+				<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:paddingLeft="3dip"
+			    android:paddingRight="3dip" >
+			
+			    <LinearLayout
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal" >
+			
+			        <TextView
+			            android:id="@+id/textView1"
+			            style="@style/style_dk_textview"
+			            android:layout_width="80dp"
+			            android:drawableLeft="@null"
+			            android:text="序号" />
+			
+			        <TextView
+			            android:id="@+id/name"
+			            style="@style/style_dk_textview"
+			            android:drawableLeft="@null"
+			            android:text="申请人姓名" />
+			
+			        <TextView
+			            android:id="@+id/textView2"
+			            style="@style/style_dk_textview"
+			            android:layout_width="250dp"
+			            android:drawableLeft="@null"
+			            android:text="证件号码" />
+			
+			        <TextView
+			            android:id="@+id/textView3"
+			            style="@style/style_dk_textview"
+			            android:layout_width="160dp"
+			            android:drawableLeft="@null"
+			            android:text="保存时间" />
+			
+			        <TextView
+			            android:id="@+id/textView4"
+			            style="@style/style_dk_textview"
+			            android:layout_width="140dp"
+			            android:drawableLeft="@null"
+			            android:text="完成状态" />
+			
+			        <TextView
+			            android:id="@+id/textView5"
+			            style="@style/style_dk_textview"
+			            android:layout_width="160dp"
+			            android:drawableLeft="@null"
+			            android:text="发送状态" />
+			    </LinearLayout>
+			
+			    <View
+			        android:layout_width="match_parent"
+			        android:layout_height="0.5dp"
+			        android:background="#e1d7d7"
+			        android:paddingLeft="3dip"
+			        android:paddingRight="3dip" />
+			</LinearLayout>
+
+			    <ListView 
+			        android:id="@+id/lv_draft_box"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        />
+			</LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

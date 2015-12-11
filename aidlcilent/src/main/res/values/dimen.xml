@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alert_width">400dp</dimen>
+    <dimen name="common_circle_width">3dp</dimen>
+    <dimen name="progress_circle_radius">34dp</dimen>
+    
+     <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+
+    <dimen name="TextView_hoke_trueing">45dp</dimen>
+    <!-- 间隙 -->
+    <dimen name="marginTop_hoke_trueing">5dp</dimen>
+
+    <!-- 字体大小 -->
+    <dimen name="Text_hoke_trueing">25sp</dimen>
+    <dimen name="Text_photo_trueing">20sp</dimen>
+    <dimen name="Text_infor_trueing">20sp</dimen>
+</resources>

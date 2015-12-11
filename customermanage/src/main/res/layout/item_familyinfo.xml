@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:paddingLeft="10dp"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_gravity="top|left"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/style_dk_textview"
+            android:layout_width="160dp"
+            android:textSize="24sp"
+            android:id="@+id/tv_fullname"
+            android:layout_height="wrap_content"
+            android:text="季旭成" />
+
+        <TextView
+            style="@style/style_dk_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/tv_certID"
+            android:text="320924199312133896" />
+        <TextView
+            style="@style/style_dk_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="(证件号码)" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_dk_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="客户编号:  " />
+        <TextView
+            style="@style/style_dk_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/tv_CustomerId"
+            android:text="P1000102012012" />
+        <TextView
+            android:layout_marginLeft="40dp"
+            style="@style/style_dk_textview"
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"
+            android:text="手机号码:" />
+        <TextView
+            style="@style/style_dk_textview"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_mobile"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="15295031553" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="bottom|center_vertical"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="12sp"
+            style="@style/style_dk_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登记人:  " />
+
+        <TextView
+            android:textSize="12sp"
+            style="@style/style_dk_textview"
+            android:layout_width="100dp"
+            android:id="@+id/tv_InputUserName"
+            android:layout_height="wrap_content"
+            android:text="陈倩" />
+
+        <TextView
+            android:textSize="12sp"
+            style="@style/style_dk_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登记机构:  " />
+
+        <TextView
+            android:textSize="12sp"
+            style="@style/style_dk_textview"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_InputOrgName"
+            android:layout_height="wrap_content"
+            android:text="咸宁支行" />
+
+        <TextView
+            android:textSize="12sp"
+            style="@style/style_dk_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登记日期:  " />
+        <TextView
+            android:textSize="12sp"
+            style="@style/style_dk_textview"
+            android:layout_width="100dp"
+            android:id="@+id/tv_InputDate"
+            android:layout_height="wrap_content"
+            android:text="2015/09/25" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_del"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="right|center_vertical"
+        android:src="@drawable/del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</FrameLayout>

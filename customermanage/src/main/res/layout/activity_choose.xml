@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgback"
+    android:orientation="vertical" >
+
+    <com.aidl.cilent.util.TitleLayout
+        android:id="@+id/tl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+		
+       <FrameLayout
+           android:background="@drawable/midspace"
+           android:layout_marginTop="20dp"
+           android:id="@+id/frame_content"
+           android:layout_width="950dp"
+           android:layout_height="600dp"
+           android:paddingLeft="20dp"
+           android:paddingRight="20dp"
+           android:paddingTop="10dp"
+           >
+           <GridView
+               android:layout_marginTop="30dp"
+        android:id="@+id/listView_choose"
+        android:numColumns="3"
+        android:horizontalSpacing="20dp"
+        android:verticalSpacing="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:headerDividersEnabled="true"
+        android:paddingLeft="20dp" 
+        android:paddingRight="20dp"
+         />
+       </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

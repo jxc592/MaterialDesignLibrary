@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.guoguang.dksq" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <application
+        android:name=".application.ProLoadApp"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_dksq"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.ProLoadBusInfoActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".activity.ChooseActivity"
+            android:screenOrientation="sensorLandscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoanListActivity"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name=".activity.PhotoTakeActivity"
+            android:label="@string/title_activity_pre_base"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+        </activity>
+
+        <service android:name=".application.PreLoadService" >
+        </service>
+        <activity
+            android:name=".activity.TakephotoActivity"
+            android:label="@string/title_activity_takephoto"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+    </application>
+
+</manifest>

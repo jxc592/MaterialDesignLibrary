@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+	 xmlns:wheel="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:gravity="center"
+            
+            style="@style/style_dk_layoutparent" >
+				
+<!--             <LinearLayout  -->
+<!--                 android:layout_marginTop="50dp" -->
+<!--                 android:layout_width="600dp" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:orientation="vertical" -->
+<!--                 > -->
+<!--                 <TextView -->
+<!--                     android:background="#909090" -->
+<!--                     android:id="@+id/textView1" -->
+<!--                     android:textSize="18sp" -->
+<!--                     android:textColor="@color/white" -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="50dp" -->
+<!--                     android:gravity="center_vertical" -->
+<!--                     android:paddingLeft="10dp" -->
+<!--                     android:text="请输入证件号码" /> -->
+<!--                 <EditText -->
+<!--                     android:paddingLeft="20dp" -->
+<!--                     android:hint="证件号码" -->
+<!--                     android:layout_marginTop="20dp" -->
+<!--                     android:id="@+id/editText1" -->
+<!--                     style="@style/style_dk_edittext" -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:ems="10" /> -->
+<!--             </LinearLayout> -->
+
+<!--             <LinearLayout -->
+<!--                 android:gravity="center" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:orientation="horizontal" > -->
+
+
+<!--                     <com.guoguang.dksq.widget.ImageTextView -->
+<!--                         style="@style/style_dk_textview" -->
+<!--                         android:text="@string/djrq" /> -->
+
+<!--                 <EditText -->
+<!--                     android:id="@+id/et_InputDate" -->
+<!--                     style="@style/style_dk_edittext" -->
+<!--                     android:layout_marginLeft="5dip" /> -->
+<!--             </LinearLayout> -->
+
+<!--             <LinearLayout -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:orientation="horizontal" > -->
+
+
+<!--                     <com.guoguang.dksq.widget.ImageTextView -->
+<!--                         style="@style/style_dk_textview" -->
+<!--                         android:text="@string/djjg" /> -->
+
+
+<!--                 <EditText -->
+<!--                     android:id="@+id/et_InputOrgID" -->
+<!--                     style="@style/style_dk_edittext" -->
+<!--                     android:layout_marginLeft="5dip" /> -->
+
+
+<!--                     <com.guoguang.dksq.widget.ImageTextView -->
+<!--                         style="@style/style_dk_textview_right" -->
+<!--                         android:text="@string/djr" /> -->
+
+<!--                 <EditText -->
+<!--                     android:id="@+id/et_InputUserID" -->
+<!--                     style="@style/style_dk_edittext" -->
+<!--                     android:layout_marginLeft="5dip" /> -->
+<!--             </LinearLayout> -->
+
+<!--             <LinearLayout -->
+<!--                 android:layout_marginTop="50dp" -->
+<!--                 android:gravity="center" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:orientation="horizontal" > -->
+
+
+<!--                <com.guoguang.dksq.widget.ImageTextView -->
+<!--                         style="@style/style_dk_textview" -->
+<!--                         android:text="@string/khlx" /> -->
+
+<!--                 <com.guoguang.dksq.widget.AutoLoadSpinner -->
+<!--                     android:id="@+id/sp_" -->
+<!--                     style="@style/style_dk_Spinner" -->
+<!--                     android:layout_marginLeft="5dip" /> -->
+
+
+                   
+<!--             </LinearLayout> -->
+     		<LinearLayout	
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.guoguang.dksq.widget.ImageTextView
+                    style="@style/style_dk_textview"
+                    android:text="证件类型" />
+
+                <com.guoguang.dksq.widget.AutoLoadSpinner
+                    wheel:unittext="CertType"
+                    android:id="@+id/sp_CertType"
+                    style="@style/style_dk_Spinner"
+                    android:layout_marginLeft="5dip" />
+            </LinearLayout>		
+		<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.guoguang.dksq.widget.ImageTextView
+                    style="@style/style_dk_textview"
+                    android:text="证件号码" />
+
+                <EditText
+                    android:inputType="number"
+                    android:maxLength="18"
+                    android:digits="0123456789Xx"
+                    android:hint="请输入证件号码"
+                    android:id="@+id/et_CertID"
+                    style="@style/style_dk_edittext"
+                    android:layout_marginLeft="5dip" />
+            </LinearLayout>
+               <LinearLayout 
+                 
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                 <TextView
+                     android:gravity="right|center_vertical"
+                     android:textColor="@color/red"
+                     android:layout_width="490dp"
+                     android:layout_height="50dp"
+                     android:autoLink="all"
+                     android:textSize="18sp"
+                     android:id="@+id/tv_change"
+                     android:text="点击查询客户信息" />
+             </LinearLayout>
+            <LinearLayout 
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                
+                 <com.guoguang.dksq.widget.ImageTextView
+                        style="@style/style_dk_textview"
+                        android:text="@string/khbh" />
+
+                <TextView
+                    android:id="@+id/et_CustomerID"
+                    style="@style/style_dk_edittext"
+                    android:layout_marginLeft="5dip" />
+                
+                <ImageView 
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/change"
+                    />
+            </LinearLayout>
+          
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+
+                    <com.guoguang.dksq.widget.ImageTextView
+                        style="@style/style_dk_textview"
+                        android:text="@string/khmc" />
+
+                <TextView
+                    android:id="@+id/et_CustomerName"
+                    style="@style/style_dk_edittext"/>
+
+<!--                 <com.guoguang.dksq.widget.ImageTextView -->
+<!--                     style="@style/style_dk_textview_right" -->
+<!--                     android:text="@string/sfxqyyw" /> -->
+
+<!--                 <com.guoguang.dksq.widget.AutoLoadSpinner  -->
+<!--                     wheel:unittext="YesNo" -->
+<!--                     android:id="@+id/sp_ISSMALLFlow" -->
+<!--                     style="@style/style_dk_Spinner" /> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+
+                    <com.guoguang.dksq.widget.ImageTextView
+                        style="@style/style_dk_textview"
+                        android:text="@string/ywpz" />
+
+
+                <Spinner
+                    android:id="@+id/sp_BusinessType"
+                    style="@style/style_dk_Spinner" />
+            </LinearLayout>
+            
+            			<LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                   <com.guoguang.dksq.widget.ImageTextView
+                    style="@style/style_dk_textview"
+                    android:text="@string/fslx" />
+
+                <TextView
+                    android:id="@+id/sp_OccurType"
+                    android:text="新发生"
+                    style="@style/style_dk_edittext"
+                    android:layout_marginLeft="5dip" />
+
+<!--                 <com.guoguang.dksq.widget.ImageTextView -->
+<!--                     android:visibility="gone" -->
+<!--                     style="@style/style_dk_textview_right" -->
+<!--                     android:text="@string/fsrq" /> -->
+
+<!--                 <EditText -->
+<!--                     android:visibility="gone" -->
+<!--                     android:id="@+id/et_OccurDate" -->
+<!--                     style="@style/style_dk_edittext" -->
+<!--                     android:layout_marginLeft="5dip" > -->
+<!--                     <requestFocus /> -->
+<!--                 </EditText> -->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</merge>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_NM"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="序号" />
+
+    <TextView
+        android:id="@+id/tv_FullName"
+        android:layout_width="180dp"
+       android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="客户姓名" />
+<TextView
+        android:id="@+id/tv_ContractFlag"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="申请类型" />
+
+    <TextView
+        android:id="@+id/tv_BusinessType"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="业务品种" />
+    <TextView
+        android:id="@+id/tv_UpdateTime"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="更新时间" />
+
+    <TextView
+        android:id="@+id/tv_manager"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="办理人" />
+
+    <ImageView
+        android:visibility="invisible"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/iv_del"
+        android:src="@drawable/del"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+</LinearLayout>

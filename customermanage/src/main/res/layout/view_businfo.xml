@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+   	xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+         <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView style="@style/style_dk_textview" android:text="是否有推荐人"/>
+            <com.guoguang.khgl.widget.AutoLoadSpinner wheel:unittext="YesNo" style="@style/style_dk_Spinner" android:id="@+id/sp_HasRecommendor"/>
+            <TextView style="@style/style_dk_textview_right" android:text="推荐人证件类型"/>
+            <com.guoguang.khgl.widget.AutoLoadSpinner wheel:unittext="CertType" style="@style/style_dk_Spinner" android:id="@+id/sp_recommendorCertType"/>
+        </LinearLayout>
+        
+          <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView style="@style/style_dk_textview" android:text="推荐人证件号码"/>
+            <EditText style="@style/style_dk_edittext" android:id="@+id/et_recommendorCertID"/>
+            <TextView style="@style/style_dk_textview_right" android:text="推荐人名称"/>
+            <EditText style="@style/style_dk_edittext" android:id="@+id/et_recommendor"/>
+        </LinearLayout>
+        
+           <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView style="@style/style_dk_textview" android:text="推荐人核心客户号"/>
+            <EditText style="@style/style_dk_edittext" android:id="@+id/et_recommendorMainCustomerID"/>
+            <TextView style="@style/style_dk_textview_right" android:text="推荐人提成比例"/>
+            <com.guoguang.khgl.widget.WithUnitEditText wheel:unittext="%" style="@style/style_dk_edittext" android:id="@+id/et_recommendScale"/>
+        </LinearLayout>
+         <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView style="@style/style_dk_textview" android:text="备注" />
+            <com.guoguang.khgl.widget.TextField style="@style/style_dk_edittext"
+                android:id="@+id/et_Remark"  
+                android:singleLine="true"
+                 android:maxEms="10" android:ems="10" 
+                 android:ellipsize="end" 
+                 >
+            </com.guoguang.khgl.widget.TextField>
+        </LinearLayout>
+        
+         
+          <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView style="@style/style_dk_textview" android:text="管户人"/>
+            <EditText style="@style/style_dk_edittext" android:id="@+id/et_ManageUserName"/>
+            <TextView style="@style/style_dk_textview_right" android:text="管户机构"/>
+            <EditText style="@style/style_dk_edittext" android:id="@+id/et_ManageOrgName"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView style="@style/style_dk_textview" android:text="登记人"/>
+            <EditText style="@style/style_dk_edittext" android:id="@+id/et_InputUserName"/>
+        </LinearLayout>
+        
+
+    </LinearLayout>
+
+</merge>

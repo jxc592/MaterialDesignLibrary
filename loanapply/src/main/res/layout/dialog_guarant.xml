@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/treedialog_bg"
+    >
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="请录入担保信息"
+        android:gravity="center_vertical"
+        />
+    <FrameLayout
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/fl_guarantcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/dialog_blue_button"
+            android:layout_width="0dp"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+            android:background="@drawable/gray_button_background"
+            android:text="取     消"
+            android:textSize="23sp" />
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="0dip"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+            style="@style/dialog_blue_button"
+            android:background="@drawable/blue_button_background"
+            android:text="确    定"
+            android:textSize="23sp" />
+
+    </LinearLayout>
+</FrameLayout>

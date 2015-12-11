@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+         xmlns:android="http://schemas.android.com/apk/res/android">
+<!--         android:background="@drawable/top" -->
+        <ImageView
+            android:layout_marginLeft="-70dp"
+            android:id="@+id/iv_logo"
+            android:src="@drawable/logo"
+            android:layout_gravity="left"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_title_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <Button
+
+            android:id="@+id/btn_home_all"
+            android:background="@drawable/iconreturn_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </FrameLayout>
+	

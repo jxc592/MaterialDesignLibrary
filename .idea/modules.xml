@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MaterialDesign/MaterialDesign.iml" filepath="$PROJECT_DIR$/MaterialDesign/MaterialDesign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MaterialDesignDemo/MaterialDesignDemo.iml" filepath="$PROJECT_DIR$/MaterialDesignDemo/MaterialDesignDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MaterialDesignLibrary.iml" filepath="$PROJECT_DIR$/MaterialDesignLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aidlcilent/aidlcilent.iml" filepath="$PROJECT_DIR$/aidlcilent/aidlcilent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customermanage/customermanage.iml" filepath="$PROJECT_DIR$/customermanage/customermanage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loanapply/loanapply.iml" filepath="$PROJECT_DIR$/loanapply/loanapply.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loanprogresearch/loanprogresearch.iml" filepath="$PROJECT_DIR$/loanprogresearch/loanprogresearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loansearch/loansearch.iml" filepath="$PROJECT_DIR$/loansearch/loansearch.iml" />
+    </modules>
+  </component>
+</project>

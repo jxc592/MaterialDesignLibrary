@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:textSize="19sp"
+        android:textColor="@color/blue"
+        android:text="请填写收入证明信息"
+        android:gravity="center_vertical"
+        />
+
+    <CheckBox
+        android:textColor="#141314"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="仅提供收入证明或仅提供租赁合同"
+        android:id="@+id/cb_income1" />
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <CheckBox
+        android:textColor="#141314"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="收入证明＋近期连续"
+        android:id="@+id/cb_income2" />
+
+        <EditText
+            android:textColor="#010200"
+            android:layout_width="40dp"
+            android:digits="0123456789"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_income1"/>
+
+        <TextView
+            android:textColor="#141314"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个月的银行帐户流水记录"
+            android:id="@+id/textView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:textColor="#141314"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收入证明＋近期连续"
+            android:id="@+id/cb_income3" />
+
+        <EditText
+            android:textColor="#010200"
+            android:layout_width="40dp"
+            android:digits="0123456789"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_income2"/>
+
+        <TextView
+            android:textColor="#141314"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个月的纳税记录"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:textColor="#141314"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="其他类型的收入文件（需加以说明）"
+        android:id="@+id/cb_income4" />
+
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/dialog_blue_button"
+            android:layout_width="0dp"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+            android:background="@drawable/gray_button_background"
+            android:text="取     消"
+            android:textSize="23sp" />
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="0dip"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+            style="@style/dialog_blue_button"
+            android:background="@drawable/blue_button_background"
+            android:text="确    定"
+            android:textSize="23sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

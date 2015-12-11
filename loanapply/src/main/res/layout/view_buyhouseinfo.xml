@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+          style="@style/style_dk_layoutparent" >
+
+            <LinearLayout
+                android:id="@+id/ll_curhouse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview" android:layout_width="wrap_content"
+                    android:text="当前房产属于第几套房产"/>
+                <com.guoguang.dksq.widget.WithUnitEditText style="@style/style_dk_edittext" 
+                    android:id="@+id/et_HouseNum" wheel:unittext="套" android:digits="0123456789" android:inputType="number"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/ll_gjj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview" 
+                    android:text="公积金贷款金额"/>
+                <com.guoguang.dksq.widget.WithUnitEditText style="@style/style_dk_edittext" 
+                    android:id="@+id/et_MfeeSum" 
+                    wheel:unittext="元"
+                    android:digits="0123456789" 
+                    android:inputType="number"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview"
+                    android:text="本次购房数"/>
+                <com.guoguang.dksq.widget.WithUnitEditText style="@style/style_dk_edittext" android:id="@+id/et_CurrentHouseCount" wheel:unittext="套" android:digits="0123456789" android:inputType="number"/>
+                 <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview_right"
+                    android:text="购房合同号"/>
+                <EditText style="@style/style_dk_edittext" android:id="@+id/et_ThirdParty1"
+               	    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview"
+                    android:text="房屋详址"/>
+                <EditText style="@style/style_dk_edittext" android:id="@+id/et_ThirdPartyID1"
+               	    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview"
+                    android:text="建筑面积单价"/>
+                <com.guoguang.dksq.widget.WithUnitEditText style="@style/style_dk_edittext" android:id="@+id/et_ThirdParty2" wheel:unittext="元" android:digits="0123456789." android:inputType="number"
+               	    />
+                 <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview_right"
+                    android:text="建筑面积"/>
+                <com.guoguang.dksq.widget.WithUnitEditText style="@style/style_dk_edittext" android:id="@+id/et_ConstructionArea" wheel:unittext="平方米" android:digits="0123456789." android:inputType="number"
+               	    />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview"
+                    android:text="房屋总价"/> 
+                <com.guoguang.dksq.widget.WithUnitEditText style="@style/style_dk_edittext" android:id="@+id/et_ThirdPartyID2" wheel:unittext="元" android:digits="0123456789." android:inputType="number" android:enabled="false"
+               	    />
+                 <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview_right"
+                    android:text="首付金额"/>
+                <com.guoguang.dksq.widget.WithUnitEditText style="@style/style_dk_edittext" android:id="@+id/et_ThirdPartyAdd1" wheel:unittext="元" android:digits="0123456789." android:inputType="number"
+               	    />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview"
+                    android:text="首付比列"/> 
+                <com.guoguang.dksq.widget.WithUnitEditText style="@style/style_dk_edittext" android:id="@+id/et_ThirdPartyZIP1" wheel:unittext="%" android:digits="0123456789." android:inputType="number" android:enabled="false"
+               	    />
+                 <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview_right"
+                    android:text="房屋形式"/>
+                <com.guoguang.dksq.widget.AutoLoadSpinner style="@style/style_dk_Spinner" android:id="@+id/sp_ThirdPartyAdd3"  wheel:unittext="HourseFormat" 
+               	    />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview"
+                    android:text="房屋类别"/>
+                <com.guoguang.dksq.widget.AutoLoadSpinner style="@style/style_dk_Spinner" android:id="@+id/sp_ThirdPartyZIP3"  wheel:unittext="HourseSort"
+               	    />
+                 <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview_right"
+                    android:text="是否小企业贷款"/>
+                 <com.guoguang.dksq.widget.AutoLoadSpinner style="@style/style_dk_Spinner" android:id="@+id/sp_ISSMALLFlow"  wheel:unittext="YesNo"
+               	    />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <TextView style="@style/style_dk_textview"
+                    android:text="备注："/>
+                <EditText style="@style/style_dk_edittext" android:id="@+id/et_Remark"
+               	    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</merge>

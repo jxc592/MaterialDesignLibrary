@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ScrollView 
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        >
+    <LinearLayout 
+   	    style="@style/style_dk_layoutparent"
+   	    >
+        <LinearLayout
+            
+   		    android:orientation="horizontal"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content" >
+   		    
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview"
+   		        android:text="抵押物类型"/>
+   		    <EditText style="@style/style_dk_edittext" android:id="@+id/et_GuarantyType" android:focusable="false" android:text="抵押-房产"
+   		        />
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview_right"
+   		        android:text="权利人证件类型"/>
+   		    <com.guoguang.dksq.widget.AutoLoadSpinner  style="@style/style_dk_edittext" android:id="@+id/sp_CertType" wheel:unittext="CertType" 
+   		        />
+   		</LinearLayout>
+   		
+        <LinearLayout
+   		    android:orientation="horizontal"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content" >
+   		    
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview"
+   		        android:text="权利人证件号码"/>
+   		    <EditText style="@style/style_dk_edittext" android:id="@+id/et_CertID" android:digits="0123456789X" android:maxLength="18"
+   		        />
+   		   
+   		</LinearLayout>
+   		<LinearLayout
+   		    android:orientation="horizontal"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content" >
+   		     <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview"
+   		        android:text="权利人名称"/>
+   		    <EditText style="@style/style_dk_edittext" android:id="@+id/et_OwnerName"
+   		        />
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview_right"
+   		        android:text="权利人类型"/>
+   		    <com.guoguang.dksq.widget.AutoLoadSpinner  style="@style/style_dk_edittext" android:id="@+id/sp_OwnerType" wheel:unittext="SecurityType"
+   		        />
+   		</LinearLayout>
+   		<FrameLayout
+   		    android:orientation="horizontal"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content" >
+   		    
+   		    <TextView 
+   		        style="@style/style_dk_textview"
+   		        android:layout_gravity="bottom"
+   		        android:text="共有人信息 :"/>
+			<!--android:background="@drawable/input_background"-->
+   		    <EditText style="@style/style_dk_edittext"
+				android:layout_marginLeft="200dp"
+				android:gravity="bottom"
+   		        android:singleLine="false"
+   		        android:layout_height="100dp"
+   		        android:layout_width="600dp"
+   		        android:id="@+id/et_Togetheronwer"
+   		        />
+   		    <android.support.design.widget.FloatingActionButton
+				android:id="@+id/btn_add"
+				android:layout_marginRight="20dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/add"
+				android:layout_gravity="bottom|right"
+   		        />
+   		</FrameLayout>
+   		<LinearLayout
+   		    android:orientation="horizontal"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content" >
+   		    
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview"
+   		        android:text="房产类型"/>
+   		    <com.guoguang.dksq.widget.AutoLoadSpinner  style="@style/style_dk_Spinner" android:id="@+id/sp_GuarantySubType" wheel:unittext="HourseSort"
+   		        />
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview_right"
+   		        android:text="房产状况"/>
+   		    <com.guoguang.dksq.widget.AutoLoadSpinner  style="@style/style_dk_Spinner" android:id="@+id/sp_HourseFormat" wheel:unittext="HourseFormat"
+   		        />
+   		</LinearLayout>
+   		<LinearLayout
+   		    android:orientation="horizontal"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content" >
+   		    
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview"
+   		        android:text="房屋详细地址"/> 
+   		    <EditText style="@style/style_dk_edittext" android:id="@+id/et_GuarantyLocation" 
+   		        />
+   		</LinearLayout>
+   		<LinearLayout
+   		    android:orientation="horizontal"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content" >
+   		    
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview"
+   		        android:text="抵押物区域地点"/>
+   		    <EditText style="@style/style_dk_edittext" android:id="@+id/et_GuarantyArea" android:hint="请选择抵押物区域地点" android:focusable="false"
+   		        />
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview_right"
+   		        android:text="建筑面积"/>
+   		    <com.guoguang.dksq.widget.WithUnitEditText style="@style/style_dk_edittext"
+				android:id="@+id/et_GuarantyAmount" wheel:unittext="平方米" android:inputType="number" android:digits="0123456789."
+   		        />
+   		</LinearLayout>
+   		<LinearLayout
+   		    android:orientation="horizontal"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content" >
+   		    
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview"
+   		        android:text="抵押物说明"/>
+   		    <EditText style="@style/style_dk_edittext" android:id="@+id/et_GuarantyDescript"
+   		        />
+   		</LinearLayout>
+   		<LinearLayout
+   		    android:orientation="horizontal"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content" >
+   		    
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview"
+   		        android:text="抵押物价值评估方式"/>
+   		    <com.guoguang.dksq.widget.AutoLoadSpinner  style="@style/style_dk_Spinner" android:id="@+id/sp_EvalMethod" wheel:unittext="EvaluateType"
+   		        />
+   		    <com.guoguang.dksq.widget.ImageTextView
+				android:id="@+id/itv_EvalOrgName"
+   		        style="@style/style_dk_textview_right"
+   		        android:text="价值评估机构名称"/>
+   		    <EditText style="@style/style_dk_edittext" android:id="@+id/et_EvalOrgName" android:focusable="false" android:hint="请选择价值评估机构"
+   		        />
+   		</LinearLayout>
+   		<LinearLayout
+   		    android:orientation="horizontal"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content" >
+   		    
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview"
+   		        android:text="价值评估时间"/>
+   		    <EditText style="@style/style_dk_edittext" android:id="@+id/et_EvalDate" android:focusable="false" android:hint="请选择"
+   		        />
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview_right"
+   		        android:text="抵押物评估价值"/>
+   		    <com.guoguang.dksq.widget.WithUnitEditText style="@style/style_dk_edittext" android:id="@+id/et_EvalNetValue" wheel:unittext="元" android:digits="0123456789." android:inputType="number"
+   		        />
+   		</LinearLayout>
+   		<LinearLayout
+   		    android:orientation="horizontal"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content" >
+   		    
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview"
+   		        android:text="抵押物债权币种"/>
+   		    <com.guoguang.dksq.widget.AutoLoadSpinner  style="@style/style_dk_Spinner" android:id="@+id/sp_GuarantyCurrency" wheel:unittext="Currency"
+   		        />
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview_right"
+   		        android:text="抵押物债权价值"/>
+   		    <com.guoguang.dksq.widget.WithUnitEditText style="@style/style_dk_edittext" android:id="@+id/et_ConfirmValue" wheel:unittext="元" android:digits="0123456789." android:inputType="number"
+   		        />
+   		</LinearLayout>
+        
+    </LinearLayout>
+</ScrollView>
+</merge>

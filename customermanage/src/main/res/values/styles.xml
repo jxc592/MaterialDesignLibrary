@@ -1,0 +1,72 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="ComonAppTheme" parent="AppBaseTheme1">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="AppBaseTheme1" parent="Theme.AppCompat.Light.DarkActionBar"/>
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+    <!-- Application theme. -->
+
+
+    <style name="style_dk_textview_right" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="style_dk_button" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="style_dk_edittext" parent="@android:style/Widget.EditText">
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:layout_width">290dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+    
+    
+    <style name="style_dk_textview" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+    
+    <style name="style_dk_Spinner" parent="@android:style/Widget.Holo.Light.Spinner">
+<!--         <item name="android:background">@drawable/spinner</item> -->
+        <item name="android:layout_width">290dip</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+    
+    <style name="style_dk_layoutparent" parent="@android:style/Theme.Light.Panel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+</resources>

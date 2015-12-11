@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   	<LinearLayout 
+   	    style="@style/style_dk_layoutparent"
+
+   	    >
+   		<LinearLayout
+   		    android:orientation="horizontal"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content" >
+   		    
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview"
+   		        android:text="经办人"/>
+   		    <EditText 
+   		        android:id="@+id/et_OperateUserName"
+   		        style="@style/style_dk_edittext"
+   		        />
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview_right"
+   		        android:text="经办机构"/>
+   		    <EditText 
+   		        android:id="@+id/et_OperateOrgName"
+   		        style="@style/style_dk_edittext"
+   		        />
+   		</LinearLayout>
+   		
+   		<LinearLayout
+   		    android:orientation="horizontal"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content" >
+   		    
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview"
+   		        android:text="协助客户经理"/>
+   		    <EditText 
+   		        android:id="@+id/et_OperateUserName1"
+   		        style="@style/style_dk_edittext"
+   		        android:focusable="false"
+   		        />
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview_right"
+   		        android:text="登记人"/>
+   		    <EditText 
+   		        android:id="@+id/et_InputUserName"
+   		        style="@style/style_dk_edittext"
+   		        />
+   		</LinearLayout>
+   		
+   		<LinearLayout
+   		    android:orientation="horizontal"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content" >
+   		    
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview"
+   		        android:text="登记机构"/>
+   		    <EditText 
+   		        android:id="@+id/et_InputOrgName"
+   		        style="@style/style_dk_edittext"
+   		        />
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview_right"
+   		        android:text="登记日期"/>
+   		    <EditText 
+   		        android:id="@+id/et_InputDate"
+   		        style="@style/style_dk_edittext"
+   		        />
+   		</LinearLayout>
+   	    <LinearLayout
+   		    android:orientation="horizontal"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content" >
+   		    
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview"
+   		        android:text="更新日期"/>
+   		    <EditText 
+   		        android:id="@+id/et_UpdateDate"
+   		        style="@style/style_dk_edittext"
+   		        />
+   		</LinearLayout>
+   		<LinearLayout
+   		    android:orientation="horizontal"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content" >
+   		    
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview"
+   		        android:text="意见"/>
+   		    <EditText
+				android:text="同意"
+   		        android:id="@+id/et_PhaseOpinion"
+   		        style="@style/style_dk_edittext"
+   		        />
+   		</LinearLayout>
+   	</LinearLayout>
+</merge>

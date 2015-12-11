@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="100dp"
+    android:layout_marginRight="100dp"
+    >
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView
+            style="@style/style_textview_itemlist"
+            android:layout_width="100dp"
+            android:text="序号" />
+        <TextView
+            style="@style/style_textview_itemlist"
+            android:layout_width="200dp"
+            android:text="客户编号" />
+
+        <TextView
+            style="@style/style_textview_itemlist"
+            android:layout_width="200dp"
+            android:text="客户姓名"
+            android:id="@+id/textView3" />
+
+        <TextView
+            style="@style/style_textview_itemlist"
+            android:layout_width="200dp"
+            android:text="业务品种"
+            android:id="@+id/textView4" />
+
+        <TextView
+            style="@style/style_textview_itemlist"
+            android:layout_width="150dp"
+            android:text="业务金额"
+            android:id="@+id/textView5" />
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        />
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

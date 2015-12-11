@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <com.guoguang.khgl.widget.ImageTextView style="@style/style_dk_textview"
+                android:text="职业"
+                />
+            <com.guoguang.khgl.widget.AutoLoadSpinner 
+                wheel:unittext="Occupation"
+                android:id="@+id/sp_Occupation"
+                style="@style/style_dk_Spinner"
+                android:layout_width="wrap_content"
+                />
+            
+        </LinearLayout>
+        
+       
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+             <com.guoguang.khgl.widget.ImageTextView style="@style/style_dk_textview"
+                android:text="职务"
+                />
+            <com.guoguang.khgl.widget.AutoLoadSpinner 
+                wheel:unittext="HeadShip"
+                android:id="@+id/sp_HeadShip"
+                style="@style/style_dk_Spinner"
+                android:layout_width="wrap_content"
+                />
+          
+            
+        </LinearLayout>
+        
+         <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             >
+               <com.guoguang.khgl.widget.ImageTextView style="@style/style_dk_textview"
+                android:text="职称"
+                />
+           <com.guoguang.khgl.widget.AutoLoadSpinner 
+                wheel:unittext="TechPost"
+                android:id="@+id/sp_Position"
+                style="@style/style_dk_Spinner"
+                />
+         </LinearLayout>
+         
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <com.guoguang.khgl.widget.ImageTextView style="@style/style_dk_textview"
+                android:text="单位行业"
+                />
+            <com.guoguang.khgl.widget.AutoLoadSpinner
+                wheel:unittext="IndustryType"
+                android:id="@+id/sp_UnitKind"
+                style="@style/style_dk_Spinner"
+                android:layout_width="wrap_content"
+                />
+           </LinearLayout>
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <com.guoguang.khgl.widget.ImageTextView style="@style/style_dk_textview"
+                android:text="单位名称"
+                />
+            <EditText 
+                android:id="@+id/et_WorkCorp"
+                style="@style/style_dk_edittext"
+                />
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <com.guoguang.khgl.widget.ImageTextView style="@style/style_dk_textview"
+                android:text="单位地址"
+                />
+            <EditText
+                android:focusable="false"
+                android:id="@+id/et_DetailWorkAdd"
+                style="@style/style_dk_edittext"
+                />
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <com.guoguang.khgl.widget.ImageTextView style="@style/style_dk_textview"
+                android:text="单位详细地址"
+                />
+            <EditText 
+                android:id="@+id/et_WorkAdd"
+                style="@style/style_dk_edittext"
+                />
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+             <com.guoguang.khgl.widget.ImageTextView style="@style/style_dk_textview"
+                 android:text="单位地址邮编"
+                 />
+             <EditText
+                 android:digits="0123456789"
+                 android:inputType="number"
+                 android:maxLength="6"
+                 android:id="@+id/et_WorkZip"
+                 style="@style/style_dk_edittext"
+                 />
+
+
+        </LinearLayout>
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+             <com.guoguang.khgl.widget.ImageTextView style="@style/style_dk_textview"
+                 android:text="通讯地址类型"
+                 />
+             <com.guoguang.khgl.widget.AutoLoadSpinner
+                 wheel:unittext="addressType"
+                 android:id="@+id/sp_CommAddType"
+                 style="@style/style_dk_Spinner"
+                 />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <TextView style="@style/style_dk_textview"
+                android:text="现工作单位年限"
+                />
+            <EditText
+                android:digits="0123456789"
+                android:inputType="number"
+                android:maxLength="2"
+                android:id="@+id/et_WorkYearCount"
+                style="@style/style_dk_edittext"
+                />
+            <TextView style="@style/style_dk_textview_right"
+                android:text="目前行业从业年限"
+                />
+            <EditText
+                android:digits="0123456789-"
+                android:inputType="number"
+                android:maxLength="2"
+                android:id="@+id/et_IndustryYearCount"
+                style="@style/style_dk_edittext"
+                />
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <TextView style="@style/style_dk_textview"
+                android:text="通讯地址"
+                />
+            <EditText 
+                android:id="@+id/et_CommAdd"
+                style="@style/style_dk_edittext"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_dk_textview"
+                android:text="单位电话" />
+
+            <EditText
+                android:id="@+id/et_WorkTel"
+                style="@style/style_dk_edittext"
+                android:digits="0123456789-"
+                android:inputType="number"
+                android:maxLength="13" />
+        </LinearLayout>
+
+        <LinearLayout
+             android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <TextView style="@style/style_dk_textview"
+                android:text="通讯地址邮编"
+                />
+            <EditText
+                android:digits="0123456789"
+                android:inputType="number"
+                android:maxLength="6"
+                 android:id="@+id/et_CommZip"
+                style="@style/style_dk_edittext"
+                />
+             <TextView style="@style/style_dk_textview_right"
+                 android:text="本单位工作起始日"
+                 />
+             <EditText
+                 android:id="@+id/et_WorkBeginDate"
+                 style="@style/style_dk_edittext"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

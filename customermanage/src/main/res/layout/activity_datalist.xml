@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <!--<com.guoguang.android.library.customwidget.TitleLayout-->
+        <!--android:id="@+id/tl_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" >-->
+    <!--</com.guoguang.android.library.customwidget.TitleLayout>-->
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+
+<!--             android:background="@drawable/bg_midspace" -->
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="1104dp"
+            android:layout_height="match_parent" >
+			<LinearLayout
+                android:layout_centerHorizontal="true"
+			    android:padding="10dp"
+			    android:orientation="vertical"
+				android:layout_height="match_parent"
+			    android:layout_width="wrap_content"
+			    >
+
+				<include layout="@layout/item_box" />
+                <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/srl_draft"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_draft"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                    </android.support.v7.widget.RecyclerView>
+                </android.support.v4.widget.SwipeRefreshLayout>
+
+			</LinearLayout>
+            <FrameLayout
+                android:visibility="invisible"
+                android:id="@+id/fl_loadview"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.aidl.cilent.library.sweetdialog.ProgressWheel
+                    android:layout_gravity="center"
+                    app:matProg_progressIndeterminate="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="正在加载"
+                    android:layout_marginLeft="50dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

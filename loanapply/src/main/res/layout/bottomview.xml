@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="5dip"
+    android:layout_height="wrap_content" >
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/iv_before" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:layout_gravity="center" -->
+    <!-- android:layout_marginLeft="20dp" -->
+    <!-- android:background="@drawable/before64" /> -->
+
+    <!--<Button-->
+        <!--android:id="@+id/iv_before"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:background="@drawable/button_background"-->
+        <!--android:text="上一步" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_save"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:background="@drawable/button_background"-->
+        <!--android:text="保存" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/iv_next"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:background="@drawable/button_background"-->
+        <!--android:text="下一步" />-->
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/iv_next" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:layout_gravity="center" -->
+    <!-- android:layout_marginRight="20dp" -->
+    <!-- android:background="@drawable/next64" /> -->
+
+</RelativeLayout>

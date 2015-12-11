@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    >
+    
+<LinearLayout
+   	    style="@style/style_dk_layoutparent"
+   	    >
+   		<LinearLayout
+   		    android:orientation="horizontal"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content" >
+   		    
+   		    <com.guoguang.dksq.widget.ImageTextView 
+   		        style="@style/style_dk_textview"
+   		        android:text="担保类型"/>
+   		    <com.guoguang.dksq.widget.AutoLoadSpinner style="@style/style_dk_Spinner" android:id="@+id/sp_ContractType" wheel:unittext="ContractType"
+   		        />
+   		    <com.guoguang.dksq.widget.ImageTextView
+   		        style="@style/style_dk_textview_right"
+   		        android:text="担保方式"/>
+   		    <com.guoguang.dksq.widget.AutoLoadSpinner style="@style/style_dk_Spinner" android:id="@+id/sp_GuarantyType" wheel:unittext="GuarantyType"
+   		        />
+   		</LinearLayout>
+
+	<LinearLayout
+        android:id="@+id/ll_assures_01"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:visibility="gone">
+
+		<com.guoguang.dksq.widget.ImageTextView
+			style="@style/style_dk_textview"
+			android:text="担保形式" />
+
+		<com.guoguang.dksq.widget.AutoLoadSpinner
+			android:id="@+id/sp_VouchWays"
+			style="@style/style_dk_Spinner"
+			wheel:unittext="VouchWays" />
+
+		<com.guoguang.dksq.widget.ImageTextView
+			style="@style/style_dk_textview_right"
+			android:text="担保阶段" />
+
+		<com.guoguang.dksq.widget.AutoLoadSpinner
+			android:id="@+id/sp_GuarantyStage"
+			style="@style/style_dk_Spinner"
+			wheel:unittext="GuarantyStage" />
+	</LinearLayout>
+   		
+   		<LinearLayout
+   		    android:orientation="horizontal"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content" >
+   		    
+   		    <com.guoguang.dksq.widget.ImageTextView
+                android:id="@+id/tv_CertType"
+   		        style="@style/style_dk_textview"
+   		        android:text="抵押人证件类型"/>
+   		    <com.guoguang.dksq.widget.AutoLoadSpinner style="@style/style_dk_Spinner" android:id="@+id/sp_CertType" wheel:unittext="CertType"
+   		        />
+   		    <com.guoguang.dksq.widget.ImageTextView
+                android:id="@+id/tv_CertID"
+   		        style="@style/style_dk_textview_right"
+   		        android:text="抵押人证件号码"/>
+   		    <EditText style="@style/style_dk_edittext" android:id="@+id/et_CertID"  android:focusable="false" android:hint="请选择"
+   		        />
+   		</LinearLayout>
+   		
+   		<LinearLayout
+   		    android:orientation="horizontal"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content" >
+   		    
+   		    <com.guoguang.dksq.widget.ImageTextView
+                android:id="@+id/tv_GuarantorName"
+   		        style="@style/style_dk_textview"
+   		        android:text="抵押人名称"/>
+   		    <EditText style="@style/style_dk_edittext" android:id="@+id/et_GuarantorName" android:focusable="false"
+   		        />
+   		</LinearLayout>
+   	    <LinearLayout
+   		    android:orientation="horizontal"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content" >
+   		    
+   		    <com.guoguang.dksq.widget.ImageTextView
+   		        style="@style/style_dk_textview"
+   		        android:text="币种"/>
+   		    <com.guoguang.dksq.widget.AutoLoadSpinner style="@style/style_dk_Spinner" android:id="@+id/sp_GuarantyCurrency" wheel:unittext="Currency"
+   		        />
+   		     <com.guoguang.dksq.widget.ImageTextView
+   		        style="@style/style_dk_textview_right"
+   		        android:text="担保金额"/>
+   		    <com.guoguang.dksq.widget.WithUnitEditText style="@style/style_dk_edittext" android:id="@+id/et_GuarantyValue" wheel:unittext="元" android:digits="0123456789." android:inputType="number"
+   		        />
+   		</LinearLayout>
+
+
+	<LinearLayout
+        android:id="@+id/ll_assures_02"
+		android:visibility="gone"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<TextView
+			style="@style/style_dk_textview"
+			android:text="保证人贷款卡编号" />
+
+		<EditText
+			android:inputType="number"
+			android:id="@+id/et_LoanCardNo"
+			style="@style/style_dk_edittext" />
+
+		<TextView
+			style="@style/style_dk_textview_right"
+			android:text="担保额度协议号" />
+
+		<EditText
+			android:focusable="false"
+			android:inputType="number"
+			android:id="@+id/et_ContractSerialNo"
+			style="@style/style_dk_edittext"
+			android:digits="0123456789"/>
+	</LinearLayout>
+
+	<LinearLayout
+        android:id="@+id/ll_assures_03"
+		android:visibility="gone"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<com.guoguang.dksq.widget.ImageTextView
+			style="@style/style_dk_textview"
+			android:text="担保释放形式" />
+
+		<com.guoguang.dksq.widget.AutoLoadSpinner
+			wheel:unittext="GuarantyFreeType"
+			android:id="@+id/sp_GuarantyFreeType"
+			style="@style/style_dk_edittext" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/ll_assures_04"
+		android:visibility="gone"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<TextView
+			style="@style/style_dk_textview"
+			android:text="提供材料" />
+
+		<EditText
+			android:focusable="false"
+			android:id="@+id/et_GuarantyDataName"
+			android:layout_width="match_parent"
+			style="@style/style_dk_edittext" />
+	</LinearLayout>
+   	</LinearLayout>
+</FrameLayout>

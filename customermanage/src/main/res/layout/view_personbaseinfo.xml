@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/style_dk_textview"
+                    android:text="客户编号" />
+
+                <EditText 
+                    android:enabled="false"
+                    android:id="@+id/et_CustomerID"
+                    style="@style/style_dk_edittext" >
+
+                </EditText>
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview_right"
+                    android:text="姓名" />
+
+                <EditText 
+                    android:maxLength="10"
+                    android:id="@+id/et_FullName"
+                    style="@style/style_dk_edittext" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview"
+                    android:text="证件类型" />
+
+                <com.guoguang.khgl.widget.AutoLoadSpinner 
+                    wheel:unittext="CertType"
+                    android:id="@+id/sp_CertType"
+                    style="@style/style_dk_Spinner" />
+
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview_right"
+                    android:text="证件号码" />
+
+                <EditText 
+                    android:digits="0123456789X"
+                    android:maxLength="18"
+                    android:id="@+id/et_CertID"
+                    style="@style/style_dk_edittext" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview"
+                    android:text="性别" />
+
+                <com.guoguang.khgl.widget.AutoLoadSpinner 
+                    wheel:unittext="Sex"
+                    android:id="@+id/sp_Sex"
+                    style="@style/style_dk_Spinner" />
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview_right"
+                    android:text="出生日期" />
+
+                <EditText 
+                    android:focusable="false"
+                    android:id="@+id/et_Birthday"
+                    style="@style/style_dk_edittext" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview"
+                    android:text="年龄" />
+
+                <EditText 
+                    android:maxLength="2"
+                    android:digits="0123456789"
+                    android:id="@+id/et_Age"
+                    style="@style/style_dk_edittext" >
+
+                </EditText>
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview_right"
+                    android:text="最高学历" />
+
+                 <com.guoguang.khgl.widget.AutoLoadSpinner 
+                    wheel:unittext="EducationExperience"
+                    android:id="@+id/sp_EduExperience"
+                    style="@style/style_dk_Spinner" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview"
+                    android:text="最高学位" />
+
+                <com.guoguang.khgl.widget.AutoLoadSpinner 
+                    wheel:unittext="EducationDegree"
+                    android:id="@+id/sp_EduDegree"
+                    style="@style/style_dk_Spinner" />
+
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview_right"
+                    android:text="手机号码" />
+
+                <EditText
+                    android:inputType="phone"
+                    android:maxLength="14"
+                    android:digits="0123456789+"
+                    android:id="@+id/et_MobileTelephone"
+                    style="@style/style_dk_edittext" />
+
+            </LinearLayout>
+            
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview"
+                    android:text="居住状况" />
+
+                <com.guoguang.khgl.widget.AutoLoadSpinner
+                    wheel:unittext="FamilyStatus"
+                    android:id="@+id/sp_FamilyStatus"
+                    style="@style/style_dk_Spinner" />
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview_right"
+                    android:text="婚姻状况" />
+
+                <com.guoguang.khgl.widget.AutoLoadSpinner
+                    wheel:unittext="Marriage"
+                    android:id="@+id/sp_Marriage"
+                    style="@style/style_dk_Spinner" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview"
+                    android:text="是否我行关联方" />
+
+                <com.guoguang.khgl.widget.AutoLoadSpinner
+                    wheel:unittext="YesNo"
+                    android:id="@+id/sp_IsRela"
+                    style="@style/style_dk_Spinner" />
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview_right"
+                    android:text="家庭地址邮编" />
+
+                <EditText
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:digits="0123456789"
+                    android:id="@+id/et_FamilyZIP"
+                    style="@style/style_dk_edittext" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview"
+                    android:text="户籍地址" />
+
+                <EditText 
+                    android:id="@+id/et_NativePlace"
+                    style="@style/style_dk_edittext" />
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview_right"
+                    android:layout_width="wrap_content"
+                    android:text="客户所属行政区代码" />
+
+                <EditText android:hint="请选择" android:focusable="false" style="@style/style_dk_edittext"
+                    android:id="@+id/et_CustomerBelongArea" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview"
+                    android:text="家庭地址" />
+
+                <EditText 
+                    android:hint="请选择"
+                    android:focusable="false"
+                    android:id="@+id/et_DetailAdd"
+                    style="@style/style_dk_edittext" />
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview_right"
+                    android:text="家庭详细地址" />
+
+                <EditText
+                    android:id="@+id/et_FamilyAdd"
+                    style="@style/style_dk_edittext" >
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/style_dk_textview"
+                    android:text="是否本行员工" />
+
+                <com.guoguang.khgl.widget.AutoLoadSpinner
+                    wheel:unittext="YesNo"
+                    android:id="@+id/sp_Staff"
+                    style="@style/style_dk_Spinner" />
+                <TextView
+                    style="@style/style_dk_textview_right"
+                    android:text="家庭电话" />
+
+                <EditText
+                    android:inputType="phone"
+                    android:id="@+id/et_FamilyTel"
+                    style="@style/style_dk_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/style_dk_textview"
+                    android:text="政治面貌" />
+
+                <com.guoguang.khgl.widget.AutoLoadSpinner
+                    wheel:unittext="PoliticalFace"
+                    android:id="@+id/sp_PoliticalFace"
+                    style="@style/style_dk_Spinner" />
+                <TextView
+                    style="@style/style_dk_textview_right"
+                    android:text="社保号" />
+
+                <EditText
+                    android:inputType="number"
+                    android:maxLength="18"
+                    android:digits="0123456789qwertyuiopasdfghjklzxcvbnm"
+                    android:id="@+id/et_SINo"
+                    style="@style/style_dk_edittext" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/style_dk_textview"
+                    android:text="电子邮箱" />
+
+                <EditText 
+                    android:id="@+id/et_EmailAdd"
+                    style="@style/style_dk_edittext" />
+                <TextView
+                    style="@style/style_dk_textview_right"
+                    android:text="是否本地常住" />
+
+                <com.guoguang.khgl.widget.AutoLoadSpinner 
+                    wheel:unittext="YesNo"
+                    android:id="@+id/sp_IsResideLocalLongTime"
+                    style="@style/style_dk_Spinner" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/style_dk_textview"
+                    android:text="信用记录类型" />
+
+                <com.guoguang.khgl.widget.AutoLoadSpinner
+                    wheel:unittext="CreditRecordType"
+                    android:id="@+id/sp_CreditRecordType"
+                    style="@style/style_dk_Spinner" />
+
+
+                <TextView
+                    style="@style/style_dk_textview_right"
+                    android:text="民族" />
+
+                <com.guoguang.khgl.widget.AutoLoadSpinner
+                    wheel:unittext="Nationality"
+                    android:id="@+id/sp_Nationality"
+                    style="@style/style_dk_Spinner" />
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</merge>

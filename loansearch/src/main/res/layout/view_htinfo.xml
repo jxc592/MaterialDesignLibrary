@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            style="@style/style_textview_name"
+            android:text="客户名称："/>
+        <TextView
+            android:id="@+id/tv_CustomerName"
+            style="@style/style_textview_value"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            style="@style/style_textview_name"
+            android:text="业务品种："/>
+        <TextView
+            android:id="@+id/tv_BusinessType"
+            style="@style/style_textview_value"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            style="@style/style_textview_name"
+            android:text="业务金额（元）："/>
+        <TextView
+            android:id="@+id/tv_BusinessSum"
+            style="@style/style_textview_value"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            style="@style/style_textview_name"
+            android:text="期限（月）："/>
+        <TextView
+            android:id="@+id/tv_TermMonth"
+            style="@style/style_textview_value"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            style="@style/style_textview_name"
+            android:text="执行利率（%）："/>
+        <TextView
+            android:id="@+id/tv_BusinessRate"
+            style="@style/style_textview_value"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            style="@style/style_textview_name"
+            android:text="担保方式："/>
+        <TextView
+            android:id="@+id/tv_VouchType"
+            style="@style/style_textview_value"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            style="@style/style_textview_name"
+            android:text="还款方式："/>
+        <TextView
+            android:id="@+id/tv_REPAYMENTMETHOD"
+            style="@style/style_textview_value"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

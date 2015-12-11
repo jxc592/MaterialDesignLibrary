@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="640dp"
+    android:layout_height="500dp"
+     android:gravity="center"
+    android:background="@drawable/dialog_result"   >
+    
+    <LinearLayout 
+        android:id="@+id/buttonlayout"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"   
+        android:divider="@drawable/divider"  
+        android:showDividers="middle"   
+        android:gravity="center"
+        >
+		<Button
+		    android:visibility="gone"
+            android:textSize="25sp"
+            android:text="取消"
+            android:textColor="#9f9f9f"
+            android:id="@+id/btn_cancel"
+            android:background="@drawable/buttonbgrect"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            />	
+        <Button
+            android:textSize="25sp"
+            android:text="确定"
+            android:textColor="#9f9f9f"
+            android:id="@+id/btn_sure"
+            android:background="@drawable/buttonbgrect"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            />
+        
+     </LinearLayout>
+    <LinearLayout 
+        android:layout_marginTop="100dp"
+        android:id="@+id/centerlayout"
+        android:layout_above="@id/buttonlayout"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"        
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/imageView_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/tv_showreult"
+            android:textSize="33sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+     </LinearLayout>
+     <TextView 
+         android:textColor="@color/bankloud_white"
+         android:textSize="38sp"
+         android:paddingLeft="30dp"
+         android:gravity="center_vertical"
+         android:text="交易结果"
+         android:layout_alignParentTop="true"
+         android:layout_width="match_parent"
+         android:layout_height="100dp"
+         />
+
+</RelativeLayout>

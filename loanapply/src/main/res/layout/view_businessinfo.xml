@@ -1,0 +1,214 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+   	xmlns:wheel="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout 
+            style="@style/style_dk_layoutparent"
+            >
+
+            <LinearLayout
+                 android:id="@+id/ll_coperta"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview" wheel:unittext="no"
+                    android:text="合作商名称"/>
+               	<EditText style="@style/style_dk_edittext" android:id="@+id/et_CooperatetEntName" android:focusable="false" android:hint="请选择合作商"
+               	    />
+               	<com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview_right"
+                    android:text="项目名称" wheel:unittext="no"/>
+               	<EditText style="@style/style_dk_edittext" android:id="@+id/et_DESCRIBE1"
+               	    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_LineNo"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview" wheel:unittext="no"
+                    android:text="关联额度协议号"/>
+               	<EditText style="@style/style_dk_edittext" android:id="@+id/et_LineNo" android:focusable="false" 
+               	    />
+            </LinearLayout>
+             <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview"
+                    android:text="业务办理模式" wheel:unittext="no"/>
+               	<com.guoguang.dksq.widget.AutoLoadSpinner style="@style/style_dk_Spinner" android:id="@+id/sp_OperationMode" wheel:unittext="OperationMode"
+               	    />
+               	<com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview_right"
+                    android:text="业务币种"/>
+               	<com.guoguang.dksq.widget.AutoLoadSpinner style="@style/style_dk_Spinner" android:id="@+id/sp_BusinessCurrency" wheel:unittext="Currency"
+               	    />
+            </LinearLayout>
+            
+              <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview"
+                    android:text="申请金额"/>
+               	<com.guoguang.dksq.widget.WithUnitEditText style="@style/style_dk_edittext"
+                    android:id="@+id/et_BusinessSum" wheel:unittext="元" android:inputType="number" android:digits="0123456789."
+               	    />
+               	<com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview_right"
+                    android:text="期限"/>
+               	<com.guoguang.dksq.widget.WithUnitEditText style="@style/style_dk_edittext"
+                    android:id="@+id/et_TermMonth" wheel:unittext="月" android:inputType="number" android:digits="0123456789"
+               	    />
+            </LinearLayout>
+             <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview"
+                    android:text="利率模式"/>
+               	<com.guoguang.dksq.widget.AutoLoadSpinner style="@style/style_dk_Spinner" android:id="@+id/sp_RateMode" wheel:unittext="RateMode"
+               	    />
+               	<com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview_right" wheel:unittext="no"
+                    android:text="基准利率类型" />
+               	<com.guoguang.dksq.widget.AutoLoadSpinner style="@style/style_dk_Spinner" android:id="@+id/sp_BaseRateType" wheel:unittext="BaseRateType"
+               	    />
+            </LinearLayout>
+             <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview"
+                    android:text="基准年利率" wheel:unittext="no"/>
+               	<com.guoguang.dksq.widget.WithUnitEditText style="@style/style_dk_edittext"
+                    android:id="@+id/et_BaseRate" wheel:unittext="%" android:inputType="number" android:digits="0123456789."
+               	    />
+               	<com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview_right"
+                    android:text="利率浮动模式" wheel:unittext="no"/>
+               	<com.guoguang.dksq.widget.AutoLoadSpinner style="@style/style_dk_Spinner" android:id="@+id/sp_RateFloatType" wheel:unittext="RateFloatType"
+               	    />
+            </LinearLayout>
+             <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview"
+                    android:text="利率浮动值" wheel:unittext="no"/>
+               	<com.guoguang.dksq.widget.WithUnitEditText style="@style/style_dk_edittext" android:id="@+id/et_RateFloat" wheel:unittext="%" android:inputType="number" android:digits="0123456789.-"
+               	    />
+               	<com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview_right"
+                    android:text="执行年利率"/>
+               	<com.guoguang.dksq.widget.WithUnitEditText style="@style/style_dk_edittext" android:id="@+id/et_BusinessRate" wheel:unittext="%" android:inputType="number" android:digits="0123456789."
+               	    />
+            </LinearLayout>
+             <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview"
+                    android:text="利率调整方式"/>
+               	<com.guoguang.dksq.widget.AutoLoadSpinner style="@style/style_dk_Spinner" android:id="@+id/sp_AdjustRateType" wheel:unittext="RateAdjustType"
+               	    />
+               	<com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview_right"
+                    android:text="主还款方式"/>
+               	<Spinner style="@style/style_dk_Spinner" 
+               	    android:id="@+id/sp_MAINREPAYMENTMETHOD" 
+               	    />
+            </LinearLayout>
+      
+             <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview"
+                    android:text="还款方式"/>
+               	<Spinner 
+                   style="@style/style_dk_Spinner" 
+                   android:id="@+id/sp_REPAYMENTMETHOD"
+               	    />
+               	<com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview_right"
+                    android:text="还款周期"/>
+               	<com.guoguang.dksq.widget.AutoLoadSpinner style="@style/style_dk_Spinner" android:id="@+id/sp_PayCyc" wheel:unittext="PayCyc"
+               	    />
+            </LinearLayout>
+             <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview"
+                    android:text="宽限期限" wheel:unittext="no"/>
+               	<com.guoguang.dksq.widget.WithUnitEditText style="@style/style_dk_edittext"
+                    android:id="@+id/et_GRACEPERIODDATE" wheel:unittext="月" android:inputType="number" android:digits="0123456789"
+               	    />
+               	<com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview_right"
+                    android:text="结算账户名" wheel:unittext="no"/>
+               	<EditText style="@style/style_dk_edittext" android:id="@+id/et_PayAccountName" 
+               	    />
+            </LinearLayout>
+             <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview"
+                    android:text="结算账号" wheel:unittext="no"/>
+               	<EditText style="@style/style_dk_edittext" android:id="@+id/et_PayAccountNo"
+                    android:inputType="number"
+               	    />
+               	<com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview_right"
+                    android:text="结算账号类型" wheel:unittext="no"/>
+               	<com.guoguang.dksq.widget.AutoLoadSpinner style="@style/style_dk_Spinner" android:id="@+id/sp_DefaultPayAcctNoType" wheel:unittext="AcctCardType"
+               	    />
+            </LinearLayout>
+             <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview"
+                    android:text="入账机构"/>
+               	<EditText style="@style/style_dk_edittext" android:focusable="false" android:hint="请选择入账机构" android:id="@+id/et_IncomeOrgName"
+               	    />
+               	<com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview_right"
+                    android:text="支付方式"/>
+               	<com.guoguang.dksq.widget.AutoLoadSpinner style="@style/style_dk_Spinner" android:id="@+id/sp_PaymentMode" wheel:unittext="PaymentMode"
+               	    />
+            </LinearLayout>
+             <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview"
+                    android:text="主要担保方式"/>
+               	<com.guoguang.dksq.widget.AutoLoadSpinner style="@style/style_dk_Spinner" wheel:unittext="VouchType" android:id="@+id/sp_VouchType" android:focusable="false"
+               	    />
+               	<com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview_right" android:layout_width="wrap_content"
+                    android:text="是否开发商阶段性担保"/>
+               	<com.guoguang.dksq.widget.AutoLoadSpinner style="@style/style_dk_Spinner" android:id="@+id/sp_Flag1" wheel:unittext="YesNo"
+               	    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview"
+                    android:text="是否涉及农贷"/>
+               	<com.guoguang.dksq.widget.AutoLoadSpinner style="@style/style_dk_Spinner" android:id="@+id/sp_FARMINGTYPE" wheel:unittext="TrueFalse"
+               	    />
+               	<com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview_right"
+                    android:text="是否低风险业务"/>
+               	<com.guoguang.dksq.widget.AutoLoadSpinner style="@style/style_dk_Spinner" android:id="@+id/sp_IsLowRisk" wheel:unittext="YesNo"
+               	    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <com.guoguang.dksq.widget.ImageTextView style="@style/style_dk_textview"
+                    android:text="用途"/>
+               	<EditText style="@style/style_dk_edittext" android:id="@+id/et_Purpose"
+               	    />
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+</merge>

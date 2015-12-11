@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.guoguang.khgl.widget.ImageTextView
+                style="@style/style_dk_textview"
+                android:text="家庭总资产" />
+
+            <com.guoguang.khgl.widget.WithUnitEditText
+                wheel:unittext="元"
+                android:digits="0123456789." android:maxLength="15"
+                android:inputType="number"
+                android:id="@+id/et_FamilyAssets"
+                style="@style/style_dk_edittext" />
+
+            <TextView
+                style="@style/style_dk_textview_right"
+                android:text="物业管理费（月）" />
+
+            <com.guoguang.khgl.widget.WithUnitEditText
+                wheel:unittext="元"
+                android:digits="0123456789." android:maxLength="15" android:inputType="number"
+                android:id="@+id/et_PropertyFee"
+                style="@style/style_dk_edittext" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.guoguang.khgl.widget.ImageTextView
+                style="@style/style_dk_textview"
+                android:text="家庭总负债" />
+
+            <com.guoguang.khgl.widget.WithUnitEditText
+                wheel:unittext="元"
+                android:digits="0123456789." android:maxLength="15"
+                android:id="@+id/et_Familyindebted"
+                style="@style/style_dk_edittext" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.guoguang.khgl.widget.ImageTextView
+                style="@style/style_dk_textview"
+                android:text="已供款额" />
+
+            <com.guoguang.khgl.widget.WithUnitEditText
+                wheel:unittext="元"
+                android:digits="0123456789." android:maxLength="15"
+                android:inputType="number"
+                android:id="@+id/et_AlreadyFurnish"
+                style="@style/style_dk_edittext" />
+
+            <TextView
+                style="@style/style_dk_textview_right"
+                android:text="拟供款额" />
+
+            <com.guoguang.khgl.widget.WithUnitEditText
+                wheel:unittext="元"
+                android:inputType="number"
+                android:digits="0123456789." android:maxLength="15"
+                android:id="@+id/et_PrepareFurnish"
+                style="@style/style_dk_edittext" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.guoguang.khgl.widget.ImageTextView
+                style="@style/style_dk_textview"
+                android:text="个人月收入" />
+
+            <com.guoguang.khgl.widget.WithUnitEditText
+               	wheel:unittext="元"
+               	android:digits="0123456789."
+                android:maxLength="15"
+               	android:inputType="number"
+                android:id="@+id/et_MonthIncome"
+                style="@style/style_dk_edittext" />
+
+            <TextView
+                style="@style/style_dk_textview_right"
+                android:text="个人月租金收入" />
+
+             <com.guoguang.khgl.widget.WithUnitEditText
+                 android:digits="0123456789." android:maxLength="15" 
+               	wheel:unittext="元"
+                android:id="@+id/et_MonthRent"
+                style="@style/style_dk_edittext" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal" >
+
+            <com.guoguang.khgl.widget.ImageTextView
+                style="@style/style_dk_textview"
+                android:text="收入证明" />
+
+            <EditText
+                style="@style/style_dk_edittext"
+                android:singleLine="false"
+                android:maxLines="4"
+                android:layout_height="wrap_content"
+                android:layout_width="450dp"
+                android:focusable="false"
+                android:id="@+id/et_IncomeProve"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/style_dk_textview"
+                android:text="其他月收入" />
+
+            <com.guoguang.khgl.widget.WithUnitEditText
+               	wheel:unittext="元"
+               	android:digits="0123456789." android:maxLength="15" android:inputType="number"
+                android:id="@+id/et_OtherMonthIncome"
+                style="@style/style_dk_edittext" />
+
+            <TextView
+                style="@style/style_dk_textview_right"
+                android:text="家庭月收入" />
+
+             <com.guoguang.khgl.widget.WithUnitEditText
+               	wheel:unittext="元"
+               	android:digits="0123456789." android:maxLength="15" android:inputType="number"
+                android:id="@+id/et_FamilyMonthIncome"
+                style="@style/style_dk_edittext" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/style_dk_textview"
+                android:text="个人投资企业名称" />
+
+            <EditText
+                android:id="@+id/et_INVESTMENTFIRM"
+                style="@style/style_dk_edittext" />
+
+            <TextView
+                style="@style/style_dk_textview_right"
+                android:text="实际投资金额" />
+
+             <com.guoguang.khgl.widget.WithUnitEditText
+               	wheel:unittext="元"
+               	android:digits="0123456789." android:maxLength="15" android:inputType="number"
+                android:id="@+id/et_INVESTMENTVALUE"
+                style="@style/style_dk_edittext" />
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

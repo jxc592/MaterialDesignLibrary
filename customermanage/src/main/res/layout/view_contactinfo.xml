@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="559dp"
+            android:divider="@drawable/divider_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/style_dk_textview"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@null"
+                android:text="联系人信息"
+                android:textColor="#cb0051" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/line_home" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview"
+                    android:text="联系人" />
+
+                <EditText
+                    android:id="@+id/et_LocalLinkMan"
+                    style="@style/style_dk_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview"
+                    android:text="联系人地址" />
+
+                <EditText
+                    android:id="@+id/et_LocalAdd"
+                    style="@style/style_dk_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview"
+                    android:drawableLeft="@null"
+                    android:text="联系人手机" />
+
+                <EditText
+                    android:id="@+id/et_LocalCellPhone"
+                    style="@style/style_dk_edittext"
+                    android:digits="0123456789"
+                    android:inputType="number"
+                    android:maxLength="12" />
+
+                <TextView
+                    style="@style/style_dk_textview_right"
+                    android:text="联系人电话：" />
+
+                <EditText
+                    android:id="@+id/et_LocalTel"
+                    style="@style/style_dk_edittext"
+                    android:digits="0123456789"
+                    android:inputType="number"
+                    android:maxLength="11" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/line_home" />
+
+            <TextView
+                style="@style/style_dk_textview"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@null"
+                android:text="紧急联系人信息"
+                android:textColor="#cb0051" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/line_home" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview"
+                    android:text="紧急联系人" />
+
+                <EditText
+                    android:id="@+id/et_UrgencyLinkMan"
+                    style="@style/style_dk_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+               <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview"
+                    android:text="同借款人关系" />
+
+                <EditText
+                    android:id="@+id/et_RelaToLender"
+                    style="@style/style_dk_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview"
+                    android:text="紧急联系人电话" />
+
+                <EditText
+                    android:id="@+id/et_UrgencyTel"
+                    style="@style/style_dk_edittext"
+                    android:digits="0123456789"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="number"
+                    android:maxLength="11" />
+
+                <com.guoguang.khgl.widget.ImageTextView
+                    style="@style/style_dk_textview_right"
+                    android:drawableLeft="@null"
+                    android:text="客户来源" />
+
+                <EditText
+                    android:id="@+id/et_CustomerResource"
+                    style="@style/style_dk_edittext"
+                    android:imeOptions="flagNoExtractUi" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/line_home" />
+        </LinearLayout>
+    </ScrollView>
+
+</merge>

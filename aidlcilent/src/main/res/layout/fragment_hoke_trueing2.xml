@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:paddingTop="30dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="证件类型"
+                android:textSize="@dimen/Text_infor_trueing" />
+
+            <Spinner
+                android:id="@+id/sp_certtype"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/spinner" >
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="客户姓名:"
+                android:textSize="@dimen/Text_infor_trueing" />
+
+            <EditText
+
+                android:id="@+id/et_custname"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/input_edittext"
+                android:hint="输入姓名"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="证件号码:"
+                android:textSize="@dimen/Text_infor_trueing" />
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/et_idinput"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/input_edittext"
+                android:digits="0123456789X"
+                android:ems="10"
+                android:hint="请输入证件号码"
+                android:maxLength="18"
+                android:paddingLeft="10dp" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_hoke2check"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/buttonbgrect"
+                android:text="刷身份证" />
+
+            <Button
+                android:id="@+id/btn_hoke"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/buttonbgrect"
+                android:text="联网核查" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/linearLayout1"
+        android:background="@drawable/line_home" />
+
+    <LinearLayout
+        android:id="@+id/ll_result"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:visibility="visible" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+			<LinearLayout 
+			    android:id="@+id/layout_mind"
+			    android:visibility="visible"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="vertical"
+			    android:gravity="center"
+			    >
+			    <TextView 
+			        android:drawableLeft="@drawable/image_result"
+			        android:text="核查结果在此处显示"
+			        android:textSize="26sp"
+			        android:textColor="#bcbbb8"
+			        android:paddingLeft="300dp"
+			        android:paddingRight="300dp"
+			        android:layout_height="70dp"
+			        android:layout_width="match_parent"
+			        android:gravity="center"/>
+			</LinearLayout>	
+            <LinearLayout
+                 android:id="@+id/layout_res"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true" >
+                
+                <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="反馈照片"
+                    android:textSize="@dimen/Text_infor_trueing" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_photoresponce"
+                android:layout_width="200dp"
+                android:layout_height="36mm"
+                android:layout_toLeftOf="@+id/iv_addIdInfor"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="46mm"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/divider_ver" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:divider="@drawable/line_home"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:showDividers="middle|end" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="反馈姓名："
+                    android:textSize="@dimen/Text_infor_trueing" />
+
+                <TextView
+                    android:id="@+id/tv_ReName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/Text_infor_trueing" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="反馈身份证号码："
+                    android:textSize="@dimen/Text_infor_trueing" />
+
+                <TextView
+                    android:id="@+id/tv_Reid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/Text_infor_trueing" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="反馈签发机关："
+                    android:textSize="@dimen/Text_infor_trueing" />
+
+                <TextView
+                    android:id="@+id/tv_ResignOrgan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/Text_infor_trueing" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="反馈核查结果："
+                    android:textSize="@dimen/Text_infor_trueing" />
+
+                <TextView
+                    android:id="@+id/tv_checkResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/Text_infor_trueing" />
+            </LinearLayout>
+        </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/ll_result"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/line_home" />
+
+    <LinearLayout
+        android:id="@+id/ll_passlayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/ll_result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:visibility="invisible" >
+
+        <Button
+            android:id="@+id/btn_passof2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/button_background"
+            android:text="核查通过" />
+
+        <Button
+            android:id="@+id/btn_nopassof2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/button_background"
+            android:text="核查不通过" />
+    </LinearLayout>
+
+</RelativeLayout>

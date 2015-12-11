@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        style="@style/style_textview_itemlist"
+        android:layout_width="100dp"
+        android:text="序号"
+        android:id="@+id/tv_number" />
+    <TextView
+        style="@style/style_textview_itemlist"
+        android:layout_width="200dp"
+        android:text="客户编号"
+        android:id="@+id/tv_CustomerID" />
+
+    <TextView
+        style="@style/style_textview_itemlist"
+        android:layout_width="200dp"
+        android:text="客户姓名"
+        android:id="@+id/tv_CustomerName" />
+
+    <TextView
+        style="@style/style_textview_itemlist"
+        android:layout_width="200dp"
+        android:text="业务品种"
+        android:id="@+id/tv_BusinessType" />
+
+    <TextView
+        style="@style/style_textview_itemlist"
+        android:layout_width="150dp"
+        android:text="业务金额"
+        android:id="@+id/tv_BusinessSum" />
+    <TextView
+        android:text="查看详情"
+        android:textColor="#520952"
+        android:layout_marginLeft="20dp"
+        android:drawableRight="@drawable/into"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="10dp" />
+</LinearLayout>
